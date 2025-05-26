@@ -131,55 +131,42 @@ while Menu > 6 or Menu <= 0 :
             narrate("You can come when ever you want!")
             Menu = 0
         if Job == 2 and GotCard == True:
-            print ("\nExelent referances sir!")
-            time.sleep(0.5)
-            print ("Your salary will be £120 per day!")
-            time.sleep(0.5)
-            print("You can come when ever you want!")
-            time.sleep(0.5)
+            narrate("\nExelent referances sir!")
+            narrate("Your salary will be £120 per day!")
+            narrate("You can come when ever you want!")
             Menu = 0
         if Job == 3 and GotCard == True:
-            print ("\nAmazing qualifications sir! ")
-            time.sleep(0.5)
-            print("Your salary will be £300 per day!")
-            time.sleep(0.5)
-            print("You can come when ever you want!")
-            time.sleep(0.5)
+            narrate("\nAmazing qualifications sir! ")
+            narrate("Your salary will be £300 per day!")
+            narrate("You can come when ever you want!")
             Menu = 0
         if Job == 4 and GotCard == True:
-            print ("\nWell sir its an honour doing bussiness!")
-            time.sleep(0.5)
-            print("What would you like your bussiness to be called sir?")
-            time.sleep(0.5)
+            narrate("\nWell sir its an honour doing bussiness!")
+            narrate("What would you like your bussiness to be called sir?")
             BussinessName = str(input("\nEnter the bussiness name here! "))
-            time.sleep(0.5)
+            time.sleep(1)
             print (BussinessName, "Will be the finest bussiness ever!")
-            time.sleep(0.5)
-            print("Your going to be earning around £200 a day!")
-            time.sleep(0.5)
+            time.sleep(1)
+            narrate("Your going to be earning around £200 a day!")
             Menu = 0
     while Menu == 2 and GotCard == False:
-            time.sleep(0.5)
-            print("\nSorry sir it appears you dont have a bank account.\nYoud be amazing but please come back later with a card\nYou can get a card by pressing (1) in the main selection area!\n")
+            narrate("\nSorry sir it appears you dont have a bank account.")
+            narrate("Youd be amazing but please come back later with a card")
+            narrate("You can get a card by pressing (1) in the main selection area!\n")
             Menu = 0
 #-----------------Menu-3----------------------#
     while Menu == 3:
         if Job == 0:
-            print("\nYou dont have a job to work.")
-            time.sleep(0.5)
-            print("You can find a job by pressing 2 in the main selection!")
-            time.sleep(0.5)
+            narrate("\nYou dont have a job to work.")
+            narrate("You can find a job by pressing 2 in the main selection!")
             Menu = 0
         if Job == 1 and Worked == False:
-            print("\nBeep boop!")
-            time.sleep(0.5)
-            print("Ill have one double chease burger with a large frie please")
-            time.sleep(0.5)
-            print("You have worked a day!\nTotal earnings : £60")
-            time.sleep(0.5)
+            narrate("\nBeep boop!")
+            narrate("Ill have one double chease burger with a large frie please")
+            narrate("You have worked a day!\nTotal earnings : £60")
             Money = Money + 60
             print("You now have a whole £",Money,"!")
-            time.sleep(0.5)
+            time.sleep(1)
             Worked = True
             Menu = 0
         if Job == 2 and Worked == False:
